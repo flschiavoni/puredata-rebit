@@ -1,0 +1,30 @@
+#N canvas 570 321 565 437 10;
+#X obj 104 146 rebit~;
+#X obj 103 244 dac~;
+#X floatatom 146 119 5 0 0 0 - - -, f 5;
+#X obj 149 56 hsl 128 15 1 32 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 146 94 int;
+#X obj 299 38 +~ 1;
+#X obj 300 63 *~ 16;
+#X obj 301 94 snapshot~;
+#X obj 350 39 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 189 123 Values from 1 to 32 bits;
+#X obj 348 61 metro 200;
+#X floatatom 399 38 5 0 0 0 - - -, f 5;
+#X obj 299 16 osc~ 4;
+#X obj 80 86 osc~ 2.2;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 1;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;
+#X connect 8 0 10 0;
+#X connect 10 0 7 0;
+#X connect 11 0 10 1;
+#X connect 12 0 5 0;
+#X connect 13 0 0 0;

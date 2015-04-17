@@ -1,0 +1,20 @@
+#N canvas 816 420 651 310 10;
+#X obj 52 125 rebit2~;
+#X obj 43 81 osc~ 3;
+#X obj 111 29 osc~ 3;
+#X obj 110 62 +~ 1;
+#X obj 110 84 *~ 16;
+#X obj 53 166 dac~;
+#X floatatom 111 7 5 0 0 0 - - -, f 5;
+#X text 220 65 First Inlet: The signal;
+#X text 218 87 Second inlet: The bit modulator \; It should be adjusted
+from 1 to 32 bits;
+#X floatatom 39 50 5 0 0 0 - - -, f 5;
+#X connect 0 0 5 0;
+#X connect 0 0 5 1;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 1;
+#X connect 6 0 2 0;
+#X connect 9 0 1 0;
